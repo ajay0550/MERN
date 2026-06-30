@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.grandparent{
+    width:400px;
+    height:400px;
+    background:red;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.parent{
+    width:250px;
+    height:250px;
+    background:blue;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.child{
+    width:120px;
+    height:120px;
+    background:green;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    cursor:pointer;
+}
