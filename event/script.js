@@ -18,3 +18,4 @@ parent.addEventListener("click", () => {
 child.addEventListener("click", () => {
     console.log("Child Clicked");
 });
+
