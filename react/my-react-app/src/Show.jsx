@@ -1,7 +1,6 @@
 import { useState } from "react";
 import User from "./User";
-
-
+import "./Show.css";
 
 function Show() {
   const [show, setShow] = useState(false);
@@ -12,7 +11,9 @@ function Show() {
   const [city, setCity] = useState("");
 
   return (
-    <>
+    <div className="container">
+      <h1>User Details Form</h1>
+
       <input
         type="text"
         placeholder="Enter Name"
@@ -20,16 +21,12 @@ function Show() {
         onChange={(e) => setName(e.target.value)}
       />
 
-      <br /><br />
-
       <input
         type="text"
-        placeholder="Enter Reg ID"
+        placeholder="Enter Registration ID"
         value={regId}
         onChange={(e) => setRegId(e.target.value)}
       />
-
-      <br /><br />
 
       <input
         type="email"
@@ -38,8 +35,6 @@ function Show() {
         onChange={(e) => setEmail(e.target.value)}
       />
 
-      <br /><br />
-
       <input
         type="text"
         placeholder="Enter City"
@@ -47,23 +42,21 @@ function Show() {
         onChange={(e) => setCity(e.target.value)}
       />
 
-      <br /><br />
-
       <button onClick={() => setShow(true)}>
-        Show
+        Show Details
       </button>
 
-      <hr />
-
       {show && (
-        <User
-          name={name}
-          regId={regId}
-          email={email}
-          city={city}
-        />
+        <div className="user-card">
+          <User
+            name={name}
+            regId={regId}
+            email={email}
+            city={city}
+          />
+        </div>
       )}
-    </>
+    </div>
   );
 }
 
