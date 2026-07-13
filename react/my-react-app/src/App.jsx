@@ -1,19 +1,18 @@
+import courses from "./data/courses";
+import CourseCard from "./component/CourseCard";
 
-
-import { useState } from "react";
-import Show from "./Show";
+import "./App.css";
 
 function App() {
-  const [count,setCount] = useState(0);
-
   return (
-    <>
-    <h1>Hello World !</h1>
-    <p>{count}</p>
-    <button onClick={()=> setCount(count+1)}>Add</button>
-    <button onClick={()=> setCount(count-1)}>Subtract</button>
-    <Show></Show>
-    </>
+    <div className="container">
+      {courses.map((course) => (
+        <CourseCard
+          key={course.id}
+          course={course}
+        />
+      ))}
+    </div>
   );
 }
 
