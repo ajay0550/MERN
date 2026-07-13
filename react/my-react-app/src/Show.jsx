@@ -1,5 +1,6 @@
 import { useState } from "react";
 import User from "./User";
+import Form from "./component/Form";
 import "./Show.css";
 
 function Show() {
@@ -12,39 +13,19 @@ function Show() {
 
   return (
     <div className="container">
-      <h1>User Details Form</h1>
+      <h1>Student Details Form</h1>
 
-      <input
-        type="text"
-        placeholder="Enter Name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
+      <Form
+        name={name}
+        setName={setName}
+        regId={regId}
+        setRegId={setRegId}
+        email={email}
+        setEmail={setEmail}
+        city={city}
+        setCity={setCity}
+        setShow={setShow}
       />
-
-      <input
-        type="text"
-        placeholder="Enter Registration ID"
-        value={regId}
-        onChange={(e) => setRegId(e.target.value)}
-      />
-
-      <input
-        type="email"
-        placeholder="Enter Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-
-      <input
-        type="text"
-        placeholder="Enter City"
-        value={city}
-        onChange={(e) => setCity(e.target.value)}
-      />
-
-      <button onClick={() => setShow(true)}>
-        Show Details
-      </button>
 
       {show && (
         <div className="user-card">
