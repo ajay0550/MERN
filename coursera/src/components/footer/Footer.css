@@ -1,0 +1,42 @@
+.footer{
+    margin-top:60px;
+    background:#1f2937;
+    color:white;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    padding:40px 20px;
+}
+
+.footer-logo{
+    font-size:30px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.logo-blue{
+    color:#3b82f6;
+}
+
+.footer-links{
+    display:flex;
+    gap:30px;
+    margin-bottom:20px;
+}
+
+.footer-links a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:#3b82f6;
+}
+
+.copyright{
+    color:#cbd5e1;
+    font-size:14px;
+}

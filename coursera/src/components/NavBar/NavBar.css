@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    width:100%;
+    height:75px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 60px;
+
+    background:white;
+
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.logo-blue{
+    color:#2563eb;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:35px;
+}
+
+.nav-links li{
+    cursor:pointer;
+    font-size:17px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links li:hover{
+    color:#2563eb;
+}
+
+.nav-buttons{
+    display:flex;
+    gap:15px;
+}
+
+.login-btn{
+    padding:10px 22px;
+
+    border:2px solid #2563eb;
+    background:white;
+    color:#2563eb;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.login-btn:hover{
+    background:#2563eb;
+    color:white;
+}
+
+.signup-btn{
+    padding:10px 22px;
+
+    border:none;
+    background:#2563eb;
+    color:white;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.signup-btn:hover{
+    background:#1d4ed8;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+}
