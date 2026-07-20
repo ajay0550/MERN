@@ -1,13 +1,10 @@
-// const express = require('express');
+
 import express from "express";
 import fs from "fs/promises";
 import "dotenv/config";
 import path from 'path';
 import { fileURLToPath } from "url";
 import bcrypt from 'bcrypt';
-// const fs = require('fs/promises');
-// require('dotenv').config();
-// const path = require('path');
 
 
 const port = process.env.PORT;
@@ -21,8 +18,7 @@ const __dirname =  path.dirname(__filename);
 const coursePath = path.join(__dirname, '../data/courses.json');
 const userPath = path.join(__dirname, '../data/users.json')
 
-// console.log('directory path',__dirname);
-// console.log('file path',__filename);
+
 
 app.get('/',(req, res) => {
     res.json({ message: 'Hello' });
