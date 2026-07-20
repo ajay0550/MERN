@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "firstName": "Sachin",
+    "lastName": "Tendulkar",
+    "email": "sachin@gmail.com",
+    "password": "$2b$10$Uk1uVVmZ3MTXBImblmqJa.fl3a5NymhLNeIIKDb3lbtMQfZXWHsDy",
+    "role": "student"
+  }
+]
