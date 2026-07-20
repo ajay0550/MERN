@@ -25,6 +25,12 @@ app.get('/',(req, res) => {
     return;
 })
 
+app.post('/login', (req,res)=>{
+    const token = jwt.sign(
+        
+    )
+})
+
 app.post('/signup', async (req, res) => {
     // const data = req.body;
     try {
